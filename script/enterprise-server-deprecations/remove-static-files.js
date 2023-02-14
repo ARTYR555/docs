@@ -14,9 +14,9 @@ import { allVersions } from '../../lib/all-versions.js'
 import { deprecated } from '../../lib/enterprise-server-releases.js'
 
 const graphqlDataDir = path.join(process.cwd(), 'data/graphql')
-const webhooksStaticDir = path.join(process.cwd(), 'src/webhooks/data')
+const webhooksStaticDir = path.join(process.cwd(), 'lib/webhooks/static')
 const graphqlStaticDir = path.join(process.cwd(), 'src/graphql/data')
-const restDecoratedDir = path.join(process.cwd(), 'src/rest/data')
+const restDecoratedDir = path.join(process.cwd(), 'lib/rest/static/decorated')
 const ghesReleaseNotesDir = 'data/release-notes/enterprise-server'
 
 const supportedEnterpriseVersions = Object.values(allVersions).filter(

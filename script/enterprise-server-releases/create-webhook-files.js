@@ -12,11 +12,11 @@ import path from 'path'
 import { program } from 'commander'
 import { allVersions } from '../../lib/all-versions.js'
 
-const payloadsDir = 'src/webhooks/data'
+const payloadsDir = 'lib/webhooks/static'
 
 program
   .description(
-    'Create new payload files in src/webhooks/data/<new_version> based on an existing version.'
+    'Create new payload files in lib/webhooks/static/<new_version> based on an existing version.'
   )
   .option(
     '-n, --newVersion <version>',
